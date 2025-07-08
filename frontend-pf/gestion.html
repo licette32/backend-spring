@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestión de Artículos de Librería</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Gestión de Artículos de Librería</h1>
+    </header>
+
+    <main>
+        <form id="formulario">
+            <label for="nombre">Nombre del Artículo:</label>
+            <input type="text" id="nombre" placeholder="Ej. Boligrafo" required><br>
+
+            <label for="categoria">Categoría:</label>
+            <input type="text" id="categoria" placeholder="Ej. Papelería" required><br>
+
+            <label for="precio">Precio:</label>
+            <input type="number" id="precio" step="0.01" placeholder="Ej. 500" required><br>
+
+            <label for="cantidadEnStock">Cantidad en Stock:</label>
+            <input type="number" id="cantidadEnStock" placeholder="Ej. 100" required><br>
+
+            <label for="pathFoto">URL de Imagen:</label>
+            <input type="url" id="pathFoto" placeholder="Ej. http://ejemplo.com/imagen.jpg"><br>
+
+            <div class="botones-form">
+                <button type="submit" class="btn guardar">Guardar</button>
+                <button type="reset" class="btn cancelar" onclick="modoEdicion = false; idEditar = null; document.getElementById('mensaje-exito').textContent = ''; document.getElementById('mensaje-error').textContent = '';">Cancelar</button>
+            </div>
+            
+            <div id="mensaje-exito" style="color: green; margin-top: 10px;"></div>
+            <div id="mensaje-error" style="color: red; margin-top: 10px;"></div>
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Categoría</th>
+                    <th>Precio</th>
+                    <th>Stock</th>
+                    <th>Imagen</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="lista-articulos">
+                </tbody>
+        </table>
+    </main>
+
+    <footer>
+        © 2025 Beverly Gonzalez
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
