@@ -76,12 +76,4 @@ Cada artículo posee los siguientes atributos:
 - MySQL Server y cliente (Workbench, phpMyAdmin, DBeaver, etc.)
 - (Opcional) Postman para probar la API
 
----
 
-## ⚙️ Configuración del Proyecto
-
-### 1. Crear Base de Datos en MySQL
-
-```sql
-CREATE DATABASE IF NOT EXISTS articulos_db;
-USE articulos_db;
