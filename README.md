@@ -51,6 +51,13 @@ Cada artículo posee los siguientes atributos:
 
 ---
 
+### 🎥 Demo del Proyecto
+
+Mira un video que muestra la funcionalidad completa del proyecto aquí:
+[Ver Demo en YouTube](https://www.youtube.com/watch?v=LA61chyDio8)
+
+---
+
 ## 🛠️ Tecnologías Utilizadas
 
 ### Backend
